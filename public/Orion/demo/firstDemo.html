@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../src/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/js/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="../src/css/jquery-ui/1.11.3/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/jquery-ui/1.11.3/jquery-ui-rk.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/rk-ui.css">
+
+	<script type="text/javascript" src="../src/firstDemo.js"></script>
+	<script type="text/javascript" src="../src/baseInput.js"></script>
+	<script type="text/javascript" src="../src/numberInput.js"></script>
+	<script type="text/javascript" src="../src/emailInput.js"></script>
+	<script type="text/javascript" src="../src/telInput.js"></script>
+	<script type="text/javascript" src="../src/phoneInput.js"></script>
+	<script type="text/javascript" src="../src/textarea.js"></script>
+	<script type="text/javascript" src="../src/selectMenu.js"></script>
+	<script type="text/javascript" src="../src/multiSelectMenu.js"></script>
+	<script type="text/javascript" src="../src/radio.js"></script>
+	<script type="text/javascript" src="../src/checkbox.js"></script>
+</head>
+<body style="padding: 40px">
+	<a href="/"><- Back</a>
+	<br/>
+	<a id="testButton">click me</a>
+    <span class="rk-ui-input">
+		<input type="text" placeholder="标准input" id="testInput">
+	</span>
+	<span class="rk-ui-input">
+		<input type="text" placeholder="数字类input" id="numberInput">
+	</span>
+	<span class="rk-ui-input">
+		<input type="text" placeholder="邮箱类input" id="emailInput">
+	</span>
+	<span class="rk-ui-input">
+		<input type="text" placeholder="固定电话类input" id="telInput">
+	</span>
+	<span class="rk-ui-input">
+		<input type="text" placeholder="固定电话类input" id="phoneInput">
+	</span>
+	<br>
+	<div style="margin: 20px 0">textarea</div>
+    <span class="rk-ui-textarea" id="rkuiTextarea">
+		<textarea></textarea>
+	</span>
+	<br>
+	<div style="margin: 20px 0">multipleselectMenu</div>
+	<span class="rk-ui-selectmenu" id="rkuiMulSelectmenu">
+		<input type="text" class="rk-ui-selectmenu-input">
+	</span>
+	<br>
+	<div style="margin: 20px 0">selectMenu</div>
+	<span class="rk-ui-selectmenu" id="rkuiSelectmenu">
+	<input type="text" class="rk-ui-selectmenu-input">
+	</span>
+	<br>
+	<div style="margin: 20px 0">radio</div>
+	<span class="rk-ui-radio" id="rkuiRadio">
+	   <span>
+		    <input type="radio" class="rk-ui-radiobutton" id="radio1" name="radiobutton">
+		    <label for="radio1">单选1</label>
+	   </span>
+	   <span>
+		    <input type="radio" class="rk-ui-radiobutton" id="radio2" name="radiobutton">
+	        <label for="radio2">单选2</label>
+	   </span>
+	   <span>
+		   <input type="radio" class="rk-ui-radiobutton" id="radio3" name="radiobutton">
+	       <label for="radio3">单选3</label>
+	   </span>
+	</span>
+	<div style="margin: 20px 0;clear: both;overflow: hidden;margin-top: 60px;">checkbox</div>
+	<span class="rk-ui-checkbox" id="rkuicheckbox">
+	   <span>
+		    <input type="checkbox" class="rk-ui-checkboxbutton" id="checkbox1" name="checkboxbutton">
+		    <label for="checkbox1">多选1</label>
+	   </span>
+	   <span>
+		    <input type="checkbox" class="rk-ui-checkboxbutton" id="checkbox2" name="checkboxbutton">
+	        <label for="checkbox2">多选2</label>
+	   </span>
+	   <span>
+		   <input type="checkbox" class="rk-ui-checkboxbutton" id="checkbox3" name="checkboxbutton">
+	       <label for="checkbox3">多选3</label>
+	   </span>
+	</span>
+</body>
+</html>
+<script>
+    $(function(){
+        $('#testButton').firstDemo();
+        $('#testInput').baseInput({
+			require:true,
+			vilidataEvent:'blur'
+		});
+        $('#numberInput').numberInput({
+            hasPrefix:'$'
+		});
+        $('#emailInput').emailInput();
+        $('#telInput').telInput();
+        $('#phoneInput').phoneInput();
+        $('#rkuiTextarea').textarea();
+        $('#rkuiSelectmenu').selectMenu();
+        $('#rkuiMulSelectmenu').multiSelectMenu();
+        $('.rk-ui-radiobutton').radio();
+        $('.rk-ui-checkboxbutton').checkbox();
+    });
+</script>

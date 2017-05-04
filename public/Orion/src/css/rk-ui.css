@@ -1,0 +1,442 @@
+/*-------------------------------------------------重置reset-------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #3399cc;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input::-moz-placeholder {
+    color: #cfdae5;
+}
+
+input::-webkit-input-placeholder {
+    color: #cfdae5;
+}
+
+textarea::-moz-placeholder {
+    color: #cfdae5;
+}
+
+textarea::-webkit-placeholder {
+    color: #cfdae5;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+body {
+    font-family: Arial, 'Hiragino Sans GB', '微软雅黑', '黑体-简', Helvetica, sans-serif;
+    font-size: 12px;
+    overflow: auto;
+    height: 100%;
+    color: #475059;
+    background: #fff;
+}
+
+input {
+    font-family: Arial, 'Hiragino Sans GB', '微软雅黑', '黑体-简', Helvetica, sans-serif;
+    font-size: 12px;
+    -webkit-transition: box-shadow .30s ease-in-out;
+    -moz-transition: box-shadow .30s ease-in-out;
+    -o-transition: box-shadow .30s ease-in-out;
+}
+
+input:text {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+input:password {
+    border: 1px solid #e6e6e6;
+}
+
+button {
+    font-family: Arial, 'Hiragino Sans GB', 'Hiragino Sans GB', '微软雅黑', '黑体-简', Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+select {
+    font-family: Arial, 'Hiragino Sans GB', '微软雅黑', '黑体-简', Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px solid #e6e6e6;
+}
+
+textarea {
+    font-family: Arial, 'Hiragino Sans GB', '微软雅黑', '黑体-简', Helvetica, sans-serif;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 44px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+textarea {
+    font-size: 12px;
+    resize: none;
+}
+
+
+/** 消掉input框上的叉号 **/
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #adbdcc;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #adbdcc;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #adbdcc;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #adbdcc;
+}
+
+/*
+rk-ui-input
+ */
+.rk-ui-input{
+
+}
+.rk-ui-input .rk-ui-state-init{
+    height: 30px;
+    border:1px solid #a0aebf;
+    border-radius: 5px;
+    width: 180px;
+    line-height: 30px;
+    outline:none;
+}
+.rk-ui-input .rk-ui-state-active{
+    border:1px solid #00aaef;
+}
+.rk-ui-input .rk-ui-state-disable{
+    border:1px solid #5f6b7e;
+    background: #5f6b7e;
+}
+.rk-ui-input .rk-ui-state-error{
+    border:1px solid orangered;
+}
+/*rkui-textarea*/
+.rk-ui-textarea{
+    display: inline-block;
+}
+.rk-ui-textarea .rk-ui-state-init{
+    border:1px solid #a0aebf;
+    border-radius: 5px;
+    outline:none;
+    width: 100%;
+    height: 100%;
+    /*width: 300px;*/
+    /*height: 50px;*/
+}
+.rk-ui-textarea .rk-ui-state-active{
+    border:1px solid #00aaef;
+}
+rk-ui-textarea .rk-ui-state-disable{
+    border:1px solid #5f6b7e;
+    background: #5f6b7e;
+}
+.rk-ui-textarea .rk-ui-state-error{
+    border:1px solid orangered;
+}
+.rk-ui-textarea .rk-ui-textarea-label{
+    float: right;
+}
+
+/*rk-ui-selectmenu*/
+.rk-ui-selectmenu{
+    width: 180px;
+    border:1px solid #a0aebf;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.rk-ui-selectmenu .rk-ui-selectmenu-input{
+    border:none;
+    outline:none;
+    width: 80%;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+.rk-ui-selectmenu .rk-ui-selectmenu-add{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/add_normal.png) center center no-repeat;
+    float: right;
+    margin: 5px;
+}
+.rk-ui-selectmenu .rk-ui-selectmenu-add:hover{
+    background: url(../img/add_hover.png) center center no-repeat;
+}
+.rk-ui-selectmenu-combobox{
+    border:1px solid #a0aebf;
+    border-radius:0 0 5px 5px;
+    height: 150px;
+    position: absolute;
+    background: #ffffff;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content {
+
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content li{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content li span{
+    width: 100%;
+    line-height:30px;
+    color: #3d5266;
+    display: inline-block;
+    padding-left: 10px;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content li:hover{
+    background: #f7f7f9;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content li:hover span{
+    color: #202020;
+    text-decoration: none;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content li.selected{
+    background: #00aaef;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-content li.selected span{
+    color: #fff;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-input{
+    width: 15px;
+    height:15px;
+    float: left;
+    margin:7px 0 5px 5px;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-operate{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.rk-ui-selectmenu-combobox .rk-ui-selectmenu-operate span{
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.rk-ui-selectmenu-combobox .rk-ui-filter-input input{
+    margin: 0 5px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: calc(100% - 10px);
+    text-indent: 10px;
+}
+/*rk-ui-radio*/
+.rk-ui-radio .rk-ui-radio-hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.rk-ui-radio .rk-ui-radio-default{
+    background: url(../img/input_ico.png) 0 -119px no-repeat;
+    height: 14px;
+    border: none;
+    float: left;
+    margin-left: 0;
+    margin-right: -.3em;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    line-height: normal;
+    vertical-align: middle;
+    overflow: visible;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.rk-ui-radio .rk-ui-radio-text{
+    line-height: 13px;
+    padding-left: 20px !important;
+    height: 14px;
+    float: left;
+    padding: 0.1em 1em 0 1.5em;
+    font-weight: normal;
+    color: #3d5266;
+}
+.rk-ui-radio .rk-ui-radio-default:hover{
+    background: url(../img/input_ico.png) 0 -135px no-repeat;
+}
+.rk-ui-radio .rk-ui-radio-actived{
+    background: url(../img/input_ico.png) 0 -71px no-repeat;
+}
+.rk-ui-radio .rk-ui-radio-actived:hover{
+    background: url(../img/input_ico.png) 0 -103px no-repeat;
+}
+.rk-ui-radio .rk-ui-radio-disabled{
+    background: url(../img/input_ico.png) 0 -86px no-repeat;
+}
+
+/*rk-ui-checkbox*/
+.rk-ui-checkbox .rk-ui-checkbox-hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.rk-ui-checkbox .rk-ui-checkbox-default{
+    background: url(../img/input_ico.png) 0 -42px no-repeat;
+    height: 14px;
+    border: none;
+    float: left;
+    margin-left: 0;
+    margin-right: -.3em;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    line-height: normal;
+    vertical-align: middle;
+    overflow: visible;
+    cursor: pointer;
+}
+.rk-ui-checkbox .rk-ui-checkbox-text{
+    line-height: 13px;
+    padding-left: 20px !important;
+    height: 14px;
+    float: left;
+    padding: 0.1em 1em 0 1.5em;
+    font-weight: normal;
+    color: #3d5266;
+    margin-right: 20px;
+}
+.rk-ui-checkbox .rk-ui-checkbox-default:hover{
+    background: url(../img/input_ico.png) 0 -56px no-repeat;
+}
+.rk-ui-checkbox .rk-ui-checkbox-actived{
+    background: url(../img/input_ico.png) 0 0 no-repeat;
+}
+.rk-ui-checkbox .rk-ui-checkbox-actived:hover{
+    background: url(../img/input_ico.png) 0 -14px no-repeat;
+}
+.rk-ui-checkbox .rk-ui-checkbox-disabled{
+    background: url(../img/input_ico.png) 0 -28px no-repeat;
+}

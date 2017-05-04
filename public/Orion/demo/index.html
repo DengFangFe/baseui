@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OrionUI Demo</title>
+    <script type="text/javascript" src="../src/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="qrcode.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../src/css/jquery-ui/1.11.3/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/jquery-ui/1.11.3/jquery-ui-rk.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/rk-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#baseInput">Input</a>
+                <ul>
+                    <li><a href="#baseInput">baseInput</a></li>
+                    <li><a href="#numberInput">numberInput</a></li>
+                    <li><a href="#emailInput">emailInput</a></li>
+                    <li><a href="#telInput">telInput</a></li>
+                    <li><a href="#phoneInput">phoneInput</a></li>
+                </ul>
+            </li>
+            <li><a href="#textarea">Textarea</a></li>
+            <li><a href="#selectmenu">selectMenu</a></li>
+            <li><a href="#qrCode">qrCode</a></li>
+        </ul>
+    </div>
+    <div class="content" id="baseInput">
+        <p>BaseInput</p>
+        <span class="rk-ui-input">
+			<input type="text" placeholder="标准input" id="input1">
+		</span>
+    </div>
+    <div class="content" id="numberInput">
+        <p>numberInput</p>
+        <span class="rk-ui-input">
+			<input type="text" placeholder="数字类input" id="input2">
+		</span>
+    </div>
+    <div class="content" id="emailInput">
+        <p>emailInput</p>
+        <span class="rk-ui-input">
+			<input type="text" placeholder="邮箱类input" id="input3">
+		</span>
+    </div>
+    <div class="content" id="telInput">
+        <p>telInput</p>
+        <span class="rk-ui-input">
+			<input type="text" placeholder="固定电话类input" id="input4">
+		</span>
+    </div>
+    <div class="content" id="phoneInput">
+        <p>phoneInput</p>
+        <span class="rk-ui-input">
+			<input type="text" placeholder="固定电话类input" id="input5">
+		</span>
+    </div>
+    <div class="content" id="textarea">
+        <p>textarea</p>
+        <span class="rk-ui-textarea" id="textarea1">
+			<textarea></textarea>
+		</span>
+    </div>
+    <div class="content" id="selectmenu">
+        <p>selectMenu</p>
+        <span class="rk-ui-selectmenu" id="selectmenu1">
+			<input type="text" class="rk-ui-selectmenu-input">
+		</span>
+    </div>
+
+    <div class="content" id="qrCode">
+        <p>qrCode</p>
+        <label>URL：</label><input type="text" size="100" class="newUrl"/>
+        <div class="showQR" style="border: solid 1px;width: 100px;text-align: center;background-color: #eee;margin: 10px;border-radius: 5px;cursor:pointer;">转为二维码</div>
+        <div class="qrZone" style="width: 150px;height: 200px;">
+            <div class="qrBox" style="margin: 5px 25px;width: 100px;height: 100px;border: solid 1px #eee"></div>
+            <a href="javascript:;" class="copyUrl" style="text-decoration: none;margin-left: 40px;color: #c3daf9;">复制链接</a>
+        </div>
+    </div>
+</body>
+
+</html>

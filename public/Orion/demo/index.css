@@ -1,0 +1,32 @@
+    .menu {
+        width: 15%;
+        height: 80%;
+        background-color: #eeeeee;
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 2%;
+    }
+
+    .menu ul {}
+
+    .menu ul li{
+        padding-left:10px;
+        line-height: 25px;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #999999;
+    }
+    
+    .content {
+        width: 78%;
+        min-height: 120px;
+        background-color: #fffeee;
+        float: left;
+        display: block;
+        margin-left: 20%;
+        margin-top: 10px;
+        padding: 10px;
+    }
